@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #070707;
+    color: #888888;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: #888888;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigation */
+
+.nav-main {
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 30px 0px 30px;
+    background-color: #101010;
+}
+
+.nav-brand {
+    width: 60px;
+    margin: 10px;
+}
+
+/* NAV LEFT */
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 0 10px;
+}
+
+.nav-main ul li a {
+    padding: 2px;
+}
+
+.nav-main ul li a:hover {
+    transition-duration: .3s;
+    border-bottom: #00ffff 1px solid;
+    color: #c9c9c9;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 40px;
+}
+
+/* NAV RIGHT */
+
+.nav-menu-right {
+    margin: auto;
+}
+
+.nav-menu-right i {
+    margin: auto;
+    padding: 0 10px;
+}
+
+.nav-menu-right a {
+    margin: auto;
+}
+
+.nav-menu-right a:hover {
+    transition-duration: .3s;
+    color: #c9c9c9;
+}
+
+.gris {
+    transition-duration: .3s;
+    color: #c9c9c9;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.top_left_header {
+    width: 40%;
+    margin: auto;
+    min-width: 350px;
+}
+
+.top_left_header h1 {
+    color: #00ffff;
+}
+
+.top_left_header h2 {
+    color: #90ffff;
+}
+
+.top_right_header {
+    width: 20%;
+    margin: auto;
+    min-width: 350px;
+}
+
+.top_right_header img {
+    width: 180px;
+}
+
+.bot_left_header {
+    width: 50%;
+    margin: auto;
+    min-width: 350px;
+}
+
+.bot_left_header p {
+    margin-left: 20%;
+}
+
+.bot_right_header {
+    width: 50%;
+    margin: auto;
+    min-width: 350px;
+    text-align: center;
+}
+
+.bot_right_header a {
+    width: 20%;
+    font-weight: 500;
+}
+
+@media (max-width: 700px) {
+    .top_left_header, .top_right_header, .bot_left_header, .bot_left_header p, .bot_right_header {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* ACERCA DE */
+
+.profile_card {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+}
+
+.box_card_1 img {
+    width: 160px;
+    margin: 30px;
+    border: #00ffff 2px solid;
+    border-radius: 12px;
+    flex-grow: 1;
+}
+
+.box_card_2 {
+    margin: 10px;
+    flex-grow: 2;
+}
+
+.box_card_2 h2 {
+    color: #00ffff;
+}
+
+.box_card_2 h3 {
+    color: #90ffff;
+    font-size: 16px;
+}
+
+/* ESTUDIOS */
+
+.container_est {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #0f0f0f;
+}
+
+.container_edu {
+    width: 50%;
+    min-width: 360px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box_edu_1 {
+    width: 20%;
+}
+
+.box_edu_1 img {
+    width: 160px;
+}
+
+.box_edu_2 {
+    width: 80%;
+}
+
+.box_edu_2 h3 {
+    color: #90ffff;
+}
+
+@media (max-width: 1300px) {
+    .box_edu_1 img {
+        display: none;
+    }
+}
+
+/* HABILIDADES */
+
+.title_stats {
+    width: 100%;
+    padding: 20px;
+    background-color: #0f0f0f;
+    text-align: center;
+    margin: 40px 0 6px 0;
+}
+
+.title_stats h2 {
+    color: #00ffff;
+}
+
+.title_stats p {
+    color: #888888;
+}
+
+.section_stats {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.stats {
+    background-color: #0f0f0f;
+    position: relative;
+    width: 33%;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.stat_header {
+    position: relative;
+    line-height: 3em;
+}
+
+.stat_content .loader {
+    color: #0f0f0f;
+    font-size: 15px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    animation: play 2s;
+}
+
+.stat_content .stat {
+    height: 40px;
+    background-color: #90ffff;
+}
+
+@keyframes play {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        transition: 2s ease-in;
+        width: calc(100/10);
+        opacity: 1;
+    }
+}
+
+/* EXPERIENCIA */
+
+.container_info {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_exp {
+    width: 45%;
+    margin: auto;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_exp h3 {
+    margin: auto;
+    padding: 10px;
+    font-size: 32px;
+    text-align: center;
+    color: #00ffff;
+    background-color: #0f0f0f;
+}
+
+.box_exp {
+    width: 100%;
+    margin: 16px auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f0f0f;
+}
+
+.exp_img {
+    width: 80px;
+    margin: 20px;
+}
+
+.exp_img img {
+    width: 80px;
+}
+
+.exp_desc {
+    width: 100%;
+    margin: 50px;
+}
+
+.exp_desc h4 {
+    color: #90ffff;
+}
+
+/* PROYECTOS */
+
+.container_proy {
+    width: 45%;
+    margin: auto;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_proy h3 {
+    margin: auto;
+    padding: 10px;
+    font-size: 32px;
+    text-align: center;
+    color: #00ffff;
+    background-color: #0f0f0f;
+}
+
+.box_proy {
+    width: 100%;
+    margin: 16px auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f0f0f;
+}
+
+.proy_img {
+    width: 80px;
+    margin: 20px;
+}
+
+.proy_img img {
+    width: 80px;
+}
+
+.proy_desc {
+    width: 100%;
+    margin: 50px;
+}
+
+.proy_desc h4 {
+    color: #90ffff;
+}
+
+.proy_desc a {
+    color: #070707;
+    font-weight: 500;
+}
+
+.proy_desc a:hover {
+    color: #0f0f0f;
+}
+
+@media (max-width: 1060px) {
+    .container_info {
+        flex-flow: column wrap;
+    }
+    .container_exp, .container_proy {
+        width: 100%;
+    }
+}
